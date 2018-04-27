@@ -1,0 +1,23 @@
+ion-header  
+    ion-navbar
+        ion-row.justify-content-start
+            button(ion-button='', (click)='close()')
+                ion-icon(name='arrow-round-back')
+            ion-title Agregar entrenador
+        
+ion-content(style='margin:2rem')
+    ion-item    
+        ion-label(floating='') Nombre
+        ion-input#nombre_entrenador
+    ion-item
+        ion-label(floating='') Deporte
+        ion-input#deporte
+    ion-item
+        ion-label(floating='',type="number") Edad
+        ion-input#edad
+    ion-item
+        ion-label(floating='') Municipio
+        ion-input#municipio
+    div(style='text-align:center;margin-top:5rem')
+        button(ion-button='', color='secondary', style='width:20rem') Enviar
+    

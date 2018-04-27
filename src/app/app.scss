@@ -1,0 +1,89 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+//Imagen
+.redonda {
+    margin-top: 1rem;
+    border-radius: 100%; 
+}
+
+.mauto
+{
+    margin: auto;
+}
+
+
+//Contenedores
+.login-ctn{
+    text-align: center;
+    padding: 0rem 6rem;
+}
+
+
+.seccion{
+    font-weight: bold;
+    margin:0px 0px;
+}
+  
+.descripcion{
+    text-align: center;
+    margin:0px 0px;
+}
+
+.ev{
+    border-color: #005CAD;
+    border-style: solid;
+    border-radius: 15px;
+    margin: 1rem 0rem;
+    padding: 0rem 0.75rem;    
+}
+
+.evDatos{
+    font-size: 1.5rem;
+}
+
+//Margenes
+.m0{
+    margin: 0px 0px;    
+    padding: 0px 0px;
+}
+
+.mt0{
+    margin-top: 0px;
+}
+
+.mb0{
+    margin-bottom: 0px;
+}
+
+
+table{
+    border-radius: 4rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #005CAD;
+    border-radius: 15px;
+    border-collapse: separate;      
+    margin: 0px 2rem;  
+}
+
+
+td, th{    
+    text-align: left;
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+}

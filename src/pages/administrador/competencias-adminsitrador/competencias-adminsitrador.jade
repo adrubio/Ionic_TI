@@ -1,0 +1,75 @@
+ion-content    
+    div(style='margin:1.5rem 1rem')            
+        h4.text-center Informacion
+        #crear-competencia.ev   
+            ion-grid
+                    ion-row
+                        ion-col
+                            ion-label.evDatos(style='text-align:right') Nombre
+                        ion-col(col-8='')
+                            ion-textarea#nombre_evento.evDatos
+                    ion-row
+                        ion-col
+                            ion-label.evDatos(style='text-align:right') Deporte
+                        ion-col(col-8='')
+                            ion-select#deporte(interface='popover')
+                                ion-option(value='a') Tiro con arco
+                                ion-option(value='b') Atletismo
+                                ion-option(value='c') Disco
+                                ion-option(value='d') Bala
+                                ion-option(value='e') Natacion
+                                ion-option(value='f') Esgrima
+                                ion-option(value='g') Ciclismo
+                    ion-row
+                        ion-col(col-4='')
+                            ion-label.evDatos(style='text-align:right') Modalidad
+                        ion-col(col-8='')
+                            ion-select#modalidad(interface='popover')
+                                ion-option(value='a') Tiro con arco
+                                ion-option(value='b') Atletismo
+                                ion-option(value='c') Disco
+                                ion-option(value='d') Bala
+                                ion-option(value='e') Natacion
+                                ion-option(value='f') Esgrima
+                                ion-option(value='g') Ciclismo
+                    ion-row
+                        ion-col
+                            ion-label.evDatos(style='text-align:right') Lugar
+                        ion-col(col-8='')
+                            ion-textarea#lugar.evDatos
+                    ion-row
+                        ion-col
+                            ion-label.evDatos(style='text-align:right') Fecha
+                        ion-col(col-8='')
+                            ion-item                                   
+                                ion-datetime(displayFormat='DD/MM/YYYY', min='2010')
+    div(style='margin:1.5rem 1rem')                       
+        h4.text-center Atletas
+            #crear-competencia.ev   
+                ion-list    
+                    ion-item
+                        ion-label Diego Martínez García
+                        ion-checkbox([(ngModel)]="a")
+                    ion-item
+                        ion-label Natalia Fonseca Heredia
+                        ion-checkbox([(ngModel)]="b")
+                    ion-item
+                        ion-label Kevin Asened Muños
+                        ion-checkbox([(ngModel)]="c")
+                    ion-item
+                        ion-label Karina Gámez Jiménez 
+                        ion-checkbox([(ngModel)]="d")
+                    ion-item
+                        ion-label Marco Mejía Alonso
+                        ion-checkbox([(ngModel)]="e")
+                    ion-item
+                        ion-label Armando Castillón Pereira 
+                        ion-checkbox([(ngModel)]="f")
+                    ion-item
+                        ion-label Rafael Espinoza Ochoa
+                        ion-checkbox([(ngModel)]="g")
+                    ion-item
+                        ion-label Raul Méndez Astrada 
+                        ion-checkbox([(ngModel)]="h")
+            div(style='text-align:center')
+                button(ion-button='', color='secondary', style='width:20rem') Enviar

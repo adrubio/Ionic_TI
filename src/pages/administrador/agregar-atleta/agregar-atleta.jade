@@ -1,0 +1,32 @@
+ion-header  
+    ion-navbar
+        ion-row.justify-content-start
+            button(ion-button='', (click)='close()')
+                ion-icon(name='arrow-round-back')
+            ion-title Agregar atleta
+        
+ion-content
+    ion-item    
+        ion-label(floating='') Nombre
+        ion-input#nombre_atleta
+    ion-item
+        ion-label(floating='') Deporte
+        ion-input#deporte
+    ion-item
+        ion-label(floating='') Modalidad
+        ion-input#modalidad
+    ion-item
+        ion-label(floating='') Entrenador
+        ion-input#entrenador
+    ion-item
+        ion-label(floating='',type="number") Edad
+        ion-input#edad
+    ion-item                                   
+        ion-label(floating='') Nacimiento
+        ion-datetime#nacimiento(displayFormat='DD/MM/YYYY', max='2008')
+    ion-item
+        ion-label(floating='') Municipio
+        ion-input#municipio
+    div(style='text-align:center;margin-top:5rem')
+                button(ion-button='', color='secondary', style='width:20rem') Enviar
+    

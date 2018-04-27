@@ -1,0 +1,32 @@
+
+<ion-header> 
+  <ion-navbar>
+    <ion-row class="justify-content-start">
+      <button ion-button="" (click)="close()">
+        <ion-icon name="arrow-round-back"></ion-icon>
+      </button>
+      <ion-title>Agregar entrenador</ion-title>
+    </ion-row>
+  </ion-navbar>
+</ion-header>
+<ion-content style="margin:2rem;">
+  <ion-item>   
+    <ion-label floating="">Nombre</ion-label>
+    <ion-input id="nombre_entrenador"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating="">Deporte</ion-label>
+    <ion-input id="deporte"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating="" type="number">Edad</ion-label>
+    <ion-input id="edad"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating="">Municipio</ion-label>
+    <ion-input id="municipio"></ion-input>
+  </ion-item>
+  <div style="text-align:center;margin-top:5rem;">
+    <button ion-button="" color="secondary" style="width:20rem;">Enviar</button>
+  </div>
+</ion-content>

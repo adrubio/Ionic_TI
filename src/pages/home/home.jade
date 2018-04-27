@@ -1,0 +1,14 @@
+ion-content  
+  div(style='padding-top:7rem')
+    img.redonda(src="/assets/imgs/logoINDE.png", alt="")
+    
+    .login-ctn
+      ion-item  
+        ion-label(floating='') Usuario
+        ion-input#usuario
+      ion-item  
+          ion-label(floating='') Contraseña
+          ion-input#contrasena(type='password')
+      button(ion-button='', (click)='ir_tabs_Atleta()',style='margin-top:4rem') Entrar
+      //- button(ion-button='', (click)='ir_tabs_Entrenador()',style='margin-top:4rem') Entrenador
+      //- button(ion-button='', (click)='ir_tabs_Admin()',style='margin-top:4rem') Admin
